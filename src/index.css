@@ -3,5 +3,17 @@
 @tailwind utilities;
 
 body {
-  @apply font-sans;
+  @apply font-sans bg-secondary-950 text-zinc-200 antialiased;
+}
+
+*::-webkit-scrollbar {
+  @apply w-2 h-2;
+}
+
+*::-webkit-scrollbar-track {
+  @apply bg-transparent border-[5px];
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-secondary-900 rounded-2xl;
 }
