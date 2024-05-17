@@ -4,7 +4,7 @@ import { TopSection } from './components/top-section'
 
 export function App() {
   return (
-    <main className="mx-16 my-8 flex flex-col">
+    <main className="m-auto flex h-screen w-full max-w-[880px] flex-col px-16 py-8">
       <TopSection />
       <MessagesSection />
       <BottomSection />
