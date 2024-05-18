@@ -1,24 +1,26 @@
-import { PiX } from 'react-icons/pi'
+import { PiXBold } from 'react-icons/pi'
 
 export const TopSection = () => {
   return (
-    <section>
-      <div>
+    <section className="flex items-center justify-between gap-4">
+      <div className="flex items-center gap-4">
         <img
           src="https://randomuser.me/api/portraits/women/50.jpg"
           alt="Foto de Perfil"
+          className="size-12 rounded-full object-cover"
         />
-        <div>
-          <strong>Cecilia Sassaki</strong>
-          <div>
+
+        <div className="flex flex-col gap-1">
+          <strong className="text-base font-bold">Cecilia Sassaki</strong>
+          <div className="flex items-baseline gap-1">
             <div className="size-2 rounded-full bg-primary-500" />
-            <span>Online</span>
+            <span className="text-xs font-normal text-primary-500">Online</span>
           </div>
         </div>
       </div>
 
       <button>
-        <PiX />
+        <PiXBold className="size-5" />
       </button>
     </section>
   )
