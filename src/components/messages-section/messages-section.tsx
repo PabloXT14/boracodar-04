@@ -2,16 +2,20 @@ import { Message } from './message'
 
 export const MessagesSection = () => {
   return (
-    <section>
-      <div>Hoje 11:30</div>
+    <section className="flex flex-col gap-7">
+      <div className="text-center text-xs font-normal text-zinc-200">
+        Hoje 11:30
+      </div>
 
-      <div>
+      <div className="flex flex-col gap-8">
         <Message
           message={{
             username: 'Cecilia',
             time: '11:30',
             text: 'Tive uma ideia incrível para um projeto! 😍',
           }}
+          variant="secondary"
+          owner="someone"
         />
 
         <Message
@@ -20,6 +24,7 @@ export const MessagesSection = () => {
             time: '11:32',
             text: 'Sério? Me conta mais.',
           }}
+          className="self-end"
         />
 
         <Message
@@ -28,6 +33,8 @@ export const MessagesSection = () => {
             time: '11:34',
             text: 'E se a gente fizesse um chat moderno e responsivo em apenas uma semana?',
           }}
+          variant="secondary"
+          owner="someone"
         />
 
         <Message
@@ -36,6 +43,7 @@ export const MessagesSection = () => {
             time: '11:36',
             text: '#boraCodar! 🚀',
           }}
+          className="self-end"
         />
       </div>
     </section>
