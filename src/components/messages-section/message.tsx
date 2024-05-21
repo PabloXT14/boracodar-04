@@ -3,7 +3,7 @@ import { tv, type VariantProps } from 'tailwind-variants'
 
 const messageStyles = tv({
   slots: {
-    base: 'flex flex-col gap-2.5 w-fit',
+    base: 'flex flex-col gap-2.5 w-fit max-w-[450px]',
     boxMessage: 'text-xs font-normal text-zinc-200',
   },
   variants: {
