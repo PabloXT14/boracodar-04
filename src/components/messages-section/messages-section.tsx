@@ -2,7 +2,7 @@ import { Message } from './message'
 
 export const MessagesSection = () => {
   return (
-    <section className="flex flex-col gap-7">
+    <section className="scrollbar-none flex flex-1 flex-col gap-7 overflow-y-scroll">
       <div className="text-center text-xs font-normal text-zinc-200">
         Hoje 11:30
       </div>

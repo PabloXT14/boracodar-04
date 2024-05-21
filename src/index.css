@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 body {
-  @apply font-sans bg-secondary-950 text-zinc-200 antialiased;
+  @apply font-sans bg-secondary-950 text-zinc-200 antialiased overflow-hidden;
+}
+
+body input, textarea {
+  @apply outline-none
 }
 
 *::-webkit-scrollbar {

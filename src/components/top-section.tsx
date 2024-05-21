@@ -1,4 +1,4 @@
-import { PiXBold } from 'react-icons/pi'
+import { IoClose } from 'react-icons/io5'
 
 export const TopSection = () => {
   return (
@@ -20,7 +20,7 @@ export const TopSection = () => {
       </div>
 
       <button>
-        <PiXBold className="size-5" />
+        <IoClose className="size-6" />
       </button>
     </section>
   )
