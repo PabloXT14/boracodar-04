@@ -19,10 +19,10 @@ const messageStyles = tv({
     },
     owner: {
       me: {
-        boxMessage: 'rounded-br-none',
+        boxMessage: 'rounded-br-none ml-5',
       },
       someone: {
-        boxMessage: 'rounded-tl-none',
+        boxMessage: 'rounded-tl-none mr-5',
       },
     },
   },
